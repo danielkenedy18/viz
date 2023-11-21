@@ -2,9 +2,7 @@ pipeline{
   agent any
   stages{
     stage('QA'){
-      agent{
-        label any
-      }
+      agent any
       steps{
         testcompletetest credentialsId: 'tester',
           executorType: 'TE',
