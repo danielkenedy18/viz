@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('QA'){
       agent{
-        label 'TestExecute'
+        label 'sm-auto'
       }
       steps{
         testcompletetest credentialsId: 'tester',
