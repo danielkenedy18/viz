@@ -1,9 +1,9 @@
 pipeline{
-  agent { label 'sm-auto' }
+  agent { label any }
   stages{
     stage('QA'){
       agent{
-        label 'sm-auto'
+        label any
       }
       steps{
         testcompletetest credentialsId: 'tester',
